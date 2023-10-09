@@ -13,6 +13,17 @@ class Calculator:
         self.n2 = n2
         self.operation = operation
     def run(self):
-        pass
-    def choose_what_to_do():
-        pass
+        if self.operation == '+':
+            return self.sum()
+        elif self.operation == '-':
+            return self.minus()
+        
+    def sum(self):
+        return self.n1 + self.n2
+    
+    def minus(self):
+        return self.n1 - self.n2
+     
+    
+cal = Calculator(12, 15, '+')
+print(cal.run())
