@@ -19,6 +19,10 @@ class Calculator:
             return self.minus()
         elif self.operation == '*':
             return self.multiply()
+        elif self.operation == '/':
+            return self.division()
+        else:
+            return """invalid operand to perform.!!!!"""
         
     def sum(self):
         return self.n1 + self.n2
@@ -28,7 +32,14 @@ class Calculator:
     
     def multiply(self):
         return self.n1 * self.n2
+    
+    def division(self):
+        if self.n2 == 0:
+            raise ZeroDivisionError('cannot divide by zero.')
+        return self.n1 / self.n2
+    
+
      
     
-cal = Calculator(12, 15, '+')
+cal = Calculator(12, 0, '/')
 print(cal.run())
