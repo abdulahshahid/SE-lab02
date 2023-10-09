@@ -14,7 +14,7 @@ class Calculator:
         self.operation = operation
     def print(func):
         def wrapper(args):
-            print('welcome to my calculator. the operations that it performs are addition, subtraction, multiplications and division')
+            print('\n\nwelcome to my calculator. the operations that it performs are addition, subtraction, multiplications and division.\nno other functions are performed.\n')
             return func(args)
         return wrapper
     
