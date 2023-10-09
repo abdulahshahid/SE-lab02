@@ -41,5 +41,5 @@ class Calculator:
 
      
     
-cal = Calculator(12, 0, '/')
+cal = Calculator(12, 0, '=')
 print(cal.run())
