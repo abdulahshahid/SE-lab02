@@ -12,6 +12,14 @@ class Calculator:
         self.n1 = n1
         self.n2 = n2
         self.operation = operation
+    def print(func):
+        def wrapper(args):
+            print('welcome to my calculator. the operations that it performs are addition, subtraction, multiplications and division')
+            return func(args)
+        return wrapper
+    
+
+    @print
     def run(self):
         if self.operation == '+':
             return self.sum()
