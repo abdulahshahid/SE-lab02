@@ -1,4 +1,7 @@
 # SE-lab02
 **this file is written by Abdullah Shahid**
-in this repository we are working in git and github
-now i am gonna change this file
+
+this is the repository onwed by abdullah shahid
+and is shared with **Sonia Safeer** by her gmail id **sonia.safeer@namal.edu.pk**.
+
+this file contains file **abd.py** in which is ths code of calculator. 
