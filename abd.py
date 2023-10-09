@@ -17,12 +17,17 @@ class Calculator:
             return self.sum()
         elif self.operation == '-':
             return self.minus()
+        elif self.operation == '*':
+            return self.multiply()
         
     def sum(self):
         return self.n1 + self.n2
     
     def minus(self):
         return self.n1 - self.n2
+    
+    def multiply(self):
+        return self.n1 * self.n2
      
     
 cal = Calculator(12, 15, '+')
